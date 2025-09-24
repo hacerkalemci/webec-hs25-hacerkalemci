@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width =device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Storybook for the Web Engineering Module</title>
 
 	<style>
@@ -14,11 +14,10 @@
         --muted:#9ca3af;
         --accent:#60a5fa;
         --line:#1f2937;
-        --good:#34d399;
         }
 
         body{
-            front-family: system-ui;
+            font-family: system-ui;
             background: linear-gradient(180deg,var(--bg),#0b1220 60%);
             color:var(--text);
             line-height:1.5;
@@ -50,6 +49,32 @@
         h1{font-size: 22px; margin: 8px 0 12px}
         h2{font-size: 18px; margin: 18px 0 10px; color: var(--accent)}
 
+        table{
+          width:100%;
+          border-collapse: collapse;
+          background: #0e1626;
+          border:1px solid var(--line);
+          border-radius: 12px;
+          overflow: hidden;
+        }
+        caption{
+          text-align:left; padding:12px 14px; font-weight:600; color:var(--muted)
+        }
+        thead th{
+          text-align:left; padding:12px 14px; background:#0b1220; border-bottom:1px solid var(--line);
+        }
+        tbody td{
+          padding:12px 14px; border-bottom:1px solid var(--line);
+          vertical-align: top;
+        }
+        tbody tr:nth-child(even){ background:#0d1524 }
+        code{background:#0b1220; padding:2px 6px; border-radius:6px; border:1px solid var(--line)}
+        ul{margin-top:6px}
+
+
+        .muted{color:var(--muted)}
+        footer address{font-style:normal; color:var(--muted)}
+        a{color:var(--accent); text-underline-offset: 2px}
 
 
     </style>
@@ -82,7 +107,7 @@
                     </thead>
                     <tbody>
                         <!-- fill from /storybook.txt here -->
-                        <tr><td>Mi, 17.09.25 · 08:15–09:00 · 5.2B51</td><td>1</td><td>Intro (verkürzt), HTML</td></tr>
+                        <tr><td>Mi, 17.09.25 · 08:15–09:00 · 5.2B51</td><td>1</td><td>Intro (verkuerzt), HTML</td></tr>
                         <tr><td>Mi, 24.09.25 · 08:15–11:00 · 5.2B51</td><td>2</td><td>CSS Basics</td></tr>
                         <tr><td>Mi, 01.10.25 · 08:15–11:00 · 5.2B51</td><td>3</td><td>DIY Server</td></tr>
                         <tr><td>Mi, 08.10.25 · 08:15–11:00 · 5.2B51</td><td>4</td><td>DIY Server Side Apps</td></tr>
@@ -91,11 +116,11 @@
                         <tr><td>Mi, 29.10.25 · 08:15–11:00 · 5.2B51</td><td>7</td><td>Domain Model, DB</td></tr>
                         <tr><td>Mi, 05.11.25 · 08:15–11:00 · 5.2B51</td><td>8</td><td>Testing</td></tr>
                         <tr><td>Mi, 12.11.25 · 08:15–11:00 · 5.2B51</td><td>9</td><td>Security, Multi-User</td></tr>
-                        <tr><td>Mi, 19.11.25 · 08:15–11:00 · 5.2B51</td><td>10</td><td><strong>Start Bewertete Übung</strong> <span class="muted">(Anwesenheitspflicht)</span></td></tr>
-                        <tr><td>Mi, 26.11.25 · 08:15–11:00 · 5.3C06</td><td>11</td><td>Übungsanlass</td></tr>
-                        <tr><td>Mi, 03.12.25 · 08:15–11:00 · 5.2B51</td><td>12</td><td>Übungsanlass</td></tr>
-                        <tr><td>Mi, 10.12.25 · 08:15–11:00 · 5.2B51</td><td>13</td><td>Übungsanlass</td></tr>
-                        <tr><td>Mi, 17.12.25 · 08:15–11:00 · 5.2B51</td><td>14</td><td style="color: #60d693; font-weight: bold;">Abgabe</td>
+                        <tr><td>Mi, 19.11.25 · 08:15–11:00 · 5.2B51</td><td>10</td><td><strong>Start Bewertete Uebung</strong> <span class="muted">(Anwesenheitspflicht)</span></td></tr>
+                        <tr><td>Mi, 26.11.25 · 08:15–11:00 · 5.3C06</td><td>11</td><td>Uebungsanlass</td></tr>
+                        <tr><td>Mi, 03.12.25 · 08:15–11:00 · 5.2B51</td><td>12</td><td>Uebungsanlass</td></tr>
+                        <tr><td>Mi, 10.12.25 · 08:15–11:00 · 5.2B51</td><td>13</td><td>Uebungsanlass</td></tr>
+                        <tr><td>Mi, 17.12.25 · 08:15–11:00 · 5.2B51</td><td>14</td><td style="color: #34d399; font-weight: bold;">Abgabe</td>
 
                     </tbody>
    
@@ -120,7 +145,7 @@
     </main>
 
     <footer>
-        <address>Dierk König, 5.2B16, <a href="mailto:dierk.koenig@fhnw.ch">direk.koenig@fhnw.ch</a></address>
+        <address>Dierk König, 5.2B16, <a href="mailto:dierk.koenig@fhnw.ch">dierk.koenig@fhnw.ch</a></address>
     </footer>
 </body>
 
