@@ -18,11 +18,26 @@
         }
 
         body{
-        front-family: system-ui;
-        background: linear-gradient(180deg,var(--bg),#0b1220 60%);
-        color:var(--text);
-        line-height:1.5;
+            front-family: system-ui;
+            background: linear-gradient(180deg,var(--bg),#0b1220 60%);
+            color:var(--text);
+            line-height:1.5;
         }
+
+        header, footer{
+          max-width: 1000px;
+          margin: 24px auto 0;
+          padding: 16px 20px;
+        }
+
+        header{
+          font-size: clamp(20px, 3vw, 28px);
+          font-weight: 700;
+          color: var(--accent);
+        }
+
+
+
     </style>
 </head>
 
