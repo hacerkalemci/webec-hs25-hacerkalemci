@@ -8,18 +8,18 @@
 
 	<style>
         :root{
-        --bg: #0f172a;
-        --panel: #111827;
-        --text: #e5e7eb;
-        --muted:#9ca3af;
-        --accent:#60a5fa;
-        --line:#1f2937;
+            --bg: #0f172a;
+            --panel: #111827;
+            --text: #e5e7eb;
+            --muted:#9ca3af;
+            --accent:#60a5fa;
+            --line:#1f2937;
         }
 
         body{
             font-family: system-ui;
-            background: linear-gradient(180deg,var(--bg),#0b1220 60%);
-            color:var(--text);
+            background: var(--bg);
+            color: var(--text);
             line-height:1.5;
         }
 
@@ -30,19 +30,18 @@
         }
 
         header{
-          font-size: clamp(20px, 3vw, 28px);
-          font-weight: 700;
+          font-size: 24px;
+          font-weight: bold;
           color: var(--accent);
         }
 
         main{
           max-width: 1000px;
-          margin: 0 auto 48px;
-          padding: 0 20px 20px;
+          margin: 0 auto 24px;
+          padding: 16px 20px;
           background: var(--panel);
-          border:1px solid var(--line);
-          border-radius: 16px;
-          box-shadow: 0 12px 30px rgba(0,0,0,.35);
+          border: 1px solid var(--line);
+          border-radius: 12px;
         }
 
         section{padding: 20px}
@@ -123,7 +122,7 @@
                         <tr><td>Mi, 17.12.25 · 08:15–11:00 · 5.2B51</td><td>14</td><td style="color: #34d399; font-weight: bold;">Abgabe</td>
 
                     </tbody>
-   
+
                 </table>
             </article>
             <article>
